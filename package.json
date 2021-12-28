@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "description": "spiceware SDK",
   "main": "dist/bundle.js",
+  "types": "dist/index.d.ts",
+  "prepublish": "npm build",
   "scripts": {
     "test": "jest",
     "build": "webpack"
@@ -11,10 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/ninetydays/spiceware-SDK.git"
   },
-  "keywords": [
-    "encryption",
-    "decription"
-  ],
+  "keywords": ["encryption", "decription"],
   "author": "JongHun Yu",
   "license": "ISC",
   "bugs": {
