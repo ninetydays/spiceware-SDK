@@ -1,9 +1,9 @@
 {
   "name": "spiceware-sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "spiceware SDK",
-  "main": "dist/bundle.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/src/index.d.ts",
   "prepublish": "npm build",
   "scripts": {
     "test": "jest",

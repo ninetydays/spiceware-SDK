@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
+    "outDir": "dist",
     "noImplicitAny": true,
     "lib": ["es2018"],
     "module": "commonjs",
@@ -11,5 +11,6 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "declaration": true
-  }
+  },
+  "exclude": ["__test__"]
 }
