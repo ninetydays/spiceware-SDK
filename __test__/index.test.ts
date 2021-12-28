@@ -20,6 +20,9 @@ describe(NAME, () => {
       adapters: ["node-http"],
       persister: "fs",
     });
+    polly.configure({
+      persisterOptions: { fs: { recordingsDir: "__test__/recordings" } },
+    });
     sdk = new SpicewareSDK({ baseURL });
   });
 

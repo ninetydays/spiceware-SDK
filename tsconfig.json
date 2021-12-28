@@ -12,5 +12,5 @@
     "forceConsistentCasingInFileNames": true,
     "declaration": true
   },
-  "exclude": ["__test__"]
+  "exclude": ["__test__", "jest.config.ts"]
 }
