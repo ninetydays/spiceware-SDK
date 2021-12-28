@@ -1,6 +1,11 @@
-import axios, { AxiosInstance } from "axios";
+import axios, { AxiosInstance, AxiosPromise } from "axios";
 
-import { DecryptItemType, DecryptListType, EncryptItemType } from "./types";
+import {
+  DecryptItemType,
+  DecryptListType,
+  EncryptItemType,
+  ResponseType,
+} from "./types";
 
 class SpicewareSDK {
   client: AxiosInstance;
@@ -14,11 +19,11 @@ class SpicewareSDK {
     });
   }
 
-  encrypt(data: EncryptItemType) {
+  encrypt(data: EncryptItemType): AxiosPromise<ResponseType> {
     return this.client("/encrypt", { method: "post", data });
   }
 
-  decrypt(data: DecryptItemType) {
+  decrypt(data: DecryptItemType): AxiosPromise<ResponseType> {
     return this.client("/decrypt", { method: "post", data });
   }
 

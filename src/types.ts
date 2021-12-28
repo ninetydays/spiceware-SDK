@@ -15,3 +15,9 @@ export interface DecryptListType {
 export interface EncryptItemType extends DecryptItemType {
   uri: string;
 }
+
+export interface ResponseType {
+  result: "success" | "fail";
+  message?: string;
+  fields: FieldsType;
+}

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SpicewareSDK decrypt encrypted text 1`] = `
+Object {
+  "name": "jonghunyu",
+}
+`;
+
+exports[`SpicewareSDK decrypt encrypted text in array 1`] = `
+Array [
+  Object {
+    "name": "jonghunyu",
+    "seq": "1",
+  },
+]
+`;
+
+exports[`SpicewareSDK encrypts plain text 1`] = `
+Object {
+  "name": "hNc2LIumSM8p1uZD5WAeyC8O0gSwLblmkAGWRyt2FzKTS========E",
+}
+`;
